@@ -1,0 +1,320 @@
+* {margin:0; padding: 0; box-sizing: border-box}
+
+.gridContainer {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	border: solid 20px white;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px 162px 6fr 1fr;
+	grid-template-areas: 
+		"redesSociales redesSociales redesSociales redesSociales"
+		"logo menu menu menu"
+		"fotoPortada fotoPortada fotoPortada fotoPortada"
+		"pieDePagina pieDePagina pieDePagina pieDePagina";
+}
+
+.redesSociales {
+	grid-area: redesSociales; 
+	background-color: white;
+}
+
+.redesSociales ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type: none;
+}
+
+.redesSociales ul li {
+	padding: 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+.redesSociales a {
+	text-decoration: none;
+	font-family: josefin-sans,sans-serif; 
+	font-weight: 100;
+	font-style: normal;
+	font-size: 17px;
+	color: #FF3300; 
+}
+
+.redesSociales li a:hover {
+	background-color: black;
+}
+
+.logo {
+	grid-area: logo;
+	background-color: white;
+}
+
+.logo img {
+	width: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.menu {
+	grid-area: menu;
+	background-color: white;
+}
+
+.menu ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+
+.menu ul li {
+	padding: 40px;
+	margin: 25px 10px 10px 10px;
+}
+
+.menu a {
+	text-decoration: none;
+	background-color: none;
+	font-family: abril-display,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 25px;
+	color: black;
+}
+
+.menu li a:hover {
+	color: #FF3300;
+}
+
+/*nav .menu {
+	display: flex-s;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}*/
+
+.fotoPortada {
+	grid-area: fotoPortada;
+	width: 100%;
+	margin-top: 20px;
+}
+
+/*.fotoPortada img {
+	height: 700px;
+	width: 100%;
+	object-fit: contain;
+	display: block;
+	margin-top: 40px;
+	margin-bottom: 40px; 
+}*/
+
+.pieDePagina {
+	grid-area: pieDePagina;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: black;
+	margin-top: 20px;
+}
+
+.pieDePagina p {
+	margin: 20px 10px 10px 10px;
+	font-family: josefin-sans,sans-serif; 
+	font-weight: 100;
+	font-style: normal;
+	font-size: 15px;
+	color: white;
+}
+
+
+/* NUEVOS ESTILOS TITULOS 
+
+.formatoTitulos-h1 {	
+	font-family: abril-display,serif;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 70px;
+	color: white;
+	background-color: black;
+	margin: 10px;
+	padding: 40px 10px 40px 10px;
+	width: 450px;
+	height: 300px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border: none;
+	text-align: left;
+}
+
+.formatoTitulos-h2 {	
+	font-family: abril-display,serif;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 35px;
+	color: white;
+	background-color: black;
+}
+
+.formatoTitulos-h3 {	
+	font-family: abril-display,serif;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 25px;
+	color: white;
+	background-color: black;*/
+
+/* PORTFOLIO */
+
+.gridContainerPortfolio {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	border: solid 20px white;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px 162px 6fr 1fr;
+	grid-template-areas: 
+		"redesSociales redesSociales redesSociales redesSociales"
+		"logo menu menu menu"
+		"imagenesPortfolio imagenesPortfolio imagenesPortfolio imagenesPortfolio"
+		"pieDePagina pieDePagina pieDePagina pieDePagina";
+}
+
+.imagenesPortfolio {
+	grid-area: imagenesPortfolio;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	
+}
+
+.imagenesPortfolio img {
+	height: 500px;
+	width: auto;
+	margin: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.imagenesPortfolio img:hover {
+transform: scale(1.5);
+}
+
+/* BIO */
+
+.gridContainerBio {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	border: solid 20px white;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px 162px 6fr 1fr;
+	grid-template-areas: 
+		"redesSociales redesSociales redesSociales redesSociales"
+		"logo menu menu menu"
+		"sectionBio sectionBio sectionBio sectionBio"
+		"pieDePagina pieDePagina pieDePagina pieDePagina";
+}
+
+.sectionBio {
+	grid-area: sectionBio;
+	display: flex;
+	flex-flow: row nowrap;
+	}
+
+.parrafoBio {
+	display: flex;
+	flex: 1 1 80%;
+	font-family: josefin-sans,sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	background-color: white;
+	margin: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.aside {
+	display: flex;
+	flex: 1 1 20%;
+	background-color: white;
+	padding: 10px;
+	margin: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	justify-content: center;
+	border: solid 2px black;
+	height: 300px;
+}
+
+.aside img {
+	display: flex;
+	width: auto;
+	border: solid 2px black;
+	height:200px;
+}
+
+
+/* CLIENTES */
+
+.gridContainerClientes {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	border: solid 20px white;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px 162px 6fr 1fr;
+	grid-template-areas: 
+		"redesSociales redesSociales redesSociales redesSociales"
+		"logo menu menu menu"
+		"clientes clientes clientes clientes"
+		"pieDePagina pieDePagina pieDePagina pieDePagina";
+}
+
+.clientes {
+	grid-area: clientes;
+	font-family: josefin-sans,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+	background-color: black
+}
+
+.clientes table {
+	 display: flex;
+	 border:20px;
+	 cellspacing:100px;
+	 cellpadding:50px;
+}
+
+/* CONTACTO */
+
+.gridContainerContacto {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	border: solid 20px white;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px 162px 6fr 1fr;
+	grid-template-areas: 
+		"redesSociales redesSociales redesSociales redesSociales"
+		"logo menu menu menu"
+		"contacto contacto contacto contacto"
+		"pieDePagina pieDePagina pieDePagina pieDePagina";
+}
+
+ 
+.contacto {
+	grid-area: contacto;
+	display: flex;
+	flex-flow: row wrap;
+} 
+
+.formularios {
+	font-family: josefin-sans,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color:white;
+	background-color: black;
+}
+
